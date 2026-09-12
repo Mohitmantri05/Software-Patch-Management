@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PatchFlow | Software Patch Management</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="sidebar">
+  <div class="brand">◆ PatchFlow</div>
+  <nav><a class="active" href="#dashboard">Dashboard</a><a href="#patches">All Patches</a><a href="#add">Add Patch</a></nav>
+  <div class="note"><b>Patch Management</b><p>Track fixes, testing and deployments in one place.</p></div>
+</aside>
+<main class="main">
+<header class="topbar"><div><p class="eyebrow">SOFTWARE OPERATIONS</p><h1>Patch Management</h1><p class="subtitle">Monitor software fixes from testing to deployment.</p></div><button class="primary" id="addTop">+ Add New Patch</button></header>
+
+<section id="dashboard" class="stats">
+<div class="stat"><span>Total Patches</span><b id="total">0</b></div>
+<div class="stat"><span>Pending Testing</span><b id="pending">0</b></div>
+<div class="stat"><span>Tested</span><b id="tested">0</b></div>
+<div class="stat"><span>Deployed</span><b id="deployed">0</b></div>
+</section>
+
+<section class="panel" id="patches">
+<div class="panelhead"><div><h2>Patch Records</h2><p>View and manage registered software patches.</p></div>
+<div class="tools"><input id="search" placeholder="Search patches..."><select id="filter"><option>All</option><option>Pending</option><option>Testing</option><option>Tested</option><option>Deployed</option></select></div></div>
+<div class="tablewrap"><table><thead><tr><th>ID</th><th>SOFTWARE</th><th>VERSION</th><th>PRIORITY</th><th>TESTING</th><th>DEPLOYMENT</th><th>DATE</th><th>ACTION</th></tr></thead><tbody id="table"></tbody></table></div>
+</section>
+
+<section class="panel" id="add"><div class="panelhead"><div><h2 id="formTitle">Add New Patch</h2><p>Enter the details of a software fix.</p></div></div>
+<form id="form"><div class="grid">
+<label>Patch ID<input id="id" required placeholder="P004"></label>
+<label>Software Name<input id="software" required placeholder="Chrome"></label>
+<label>Version<input id="version" required placeholder="140.1"></label>
+<label>Priority<select id="priority"><option>Low</option><option selected>Medium</option><option>High</option><option>Critical</option></select></label>
+<label>Testing Status<select id="testing"><option>Pending</option><option>Testing</option><option>Tested</option></select></label>
+<label>Deployment Status<select id="deployment"><option>Not Deployed</option><option>Scheduled</option><option>Deployed</option></select></label>
+<label>Date<input type="date" id="date" required></label>
+<label class="wide">Description<textarea id="description" rows="3" placeholder="Briefly describe the fix..."></textarea></label>
+</div><div class="actions"><button type="button" class="secondary" id="clear">Clear</button><button class="primary">Save Patch</button></div></form>
+</section>
+<footer>PatchFlow • Software Patch Management System</footer>
+</main>
+<script src="app.js"></script>
+</body></html>
