@@ -1,0 +1,8 @@
+{
+  "name": "software-patch-management-system",
+  "version": "1.0.0",
+  "description": "Software Patch Management System using Node.js, Express.js and JSON.",
+  "main": "server.js",
+  "scripts": {"start": "node server.js", "dev": "node server.js"},
+  "dependencies": {"express": "^4.21.2"}
+}

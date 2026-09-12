@@ -1,0 +1,32 @@
+[
+  {
+    "id": "P001",
+    "software": "Google Chrome",
+    "version": "140.0",
+    "description": "Security and performance update",
+    "priority": "High",
+    "testing": "Tested",
+    "deployment": "Deployed",
+    "date": "2026-09-10"
+  },
+  {
+    "id": "P002",
+    "software": "Visual Studio Code",
+    "version": "1.105",
+    "description": "Bug fixes and stability improvements",
+    "priority": "Medium",
+    "testing": "Pending",
+    "deployment": "Not Deployed",
+    "date": "2026-09-11"
+  },
+  {
+    "id": "P003",
+    "software": "Windows Defender",
+    "version": "4.18.25080.5",
+    "description": "Security update to improve malware protection",
+    "priority": "Medium",
+    "testing": "Pending",
+    "deployment": "Not Deployed",
+    "date": "2026-09-12"
+  }
+]
